@@ -1,5 +1,5 @@
 # Functional Practice Question Set 3
-* Instructions:
+Instructions:
 * Make use of .filter(), .find() and .reduce() methods.
 * You can make use of basic methods such as .length, toLowerCase(), toUpperCase() if needed.
 * Do NOT use for-loops.
