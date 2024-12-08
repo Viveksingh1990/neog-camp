@@ -1,10 +1,11 @@
-Functional Practice Question Set 2
+# Functional Practice Question Set 2
 Instructions:
-Make use of .map(), .filter() and .find() methods.
-You can make use of basic methods such as .length, toLowerCase(), toUpperCase() if needed.
-Do NOT use for-loops.
+* Make use of .map(), .filter() and .find() methods.
+* You can make use of basic methods such as .length, toLowerCase(), toUpperCase() if needed.
+* Do NOT use for-loops.
 1. Given an array of objects representing people, write an ES6 function to return a new array
 containing only the names of the people.
+```js
 const people = [
 { name: 'Raj', age: 28 },
 { name: 'Swapnil', age: 42 },
@@ -12,14 +13,16 @@ const people = [
 ];
 // Your code here
 console.log(names); // Output: ['Raj', 'Swapnil', 'Anushka']
-COPY
+```
 2. Given an array, write an ES6 function to return a new array with all the elements multiplied by 5.
+```js
 const numbers = [1, 2, 3, 4];
 // Your code here
 console.log(multiplyByFive); // Output: [5, 10, 15, 20]
-COPY
+```
 3. Given employee’s data, write an ES6 function which greets them with a personalized message
 for onboarding.
+```js
 const employeeData = [
 {name: "ram", dept: "marketer"},
 {name: "Radha", dept: "SDE"},
@@ -28,9 +31,10 @@ const employeeData = [
 // Your code here
 console.log(greetEmployeeMessages);
 // Output: ['Hi ram we are glad to have you as a marketing', 'Hi Radha we are glad to hav
-COPY
+```
 4. Write an ES6 function that takes an array of objects representing books and returns an array
 with only the titles of each book.
+```js
 const books = [
 { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald' },
 { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
@@ -40,14 +44,16 @@ const books = [
 // Your code here
 const titles = getBookTitles(books);
 console.log(titles); // Output: ['The Great Gatsby', 'To Kill a Mockingbird', '1984', 'Pr
-COPY
+```
 5. Write an ES6 function which takes out the names of the students whose first letter starts with ‘A’.
+```js
 const studentName = ["Ram", "Anjali", "Arpit", "Bhanu Kumar", "Jaya", "Ankit", "shayam"]
 // Your code here
 console.log(studentNames);
 // Output: ["Anjali", "Arpit", "Ankit"]
-COPY
+```
 6. Write an ES6 function which filters out the products which have a price greater than 40.
+```js
 const productData = [
 {prodName: "Dairy Milk", price: 10},
 {prodName: "Dairy Milk Silk", price: 70},
@@ -57,23 +63,26 @@ const productData = [
 // Your code here
 console.log(getProducts(productData, 40))
 // Output: [{prodName: 'Dairy Milk Silk', price: 70}, {prodName: 'Mars', price: 50}]
-COPY
+```
 7. Write an ES6 function that takes an array of numbers and returns the first number that is
 divisible by 7.
+```js
 const numbers = [1, 2, 3, 21, 14, 7];
 // Your code here
 console.log(isDivisibleBy7)
 // Output: 21
-COPY
+```
 8. Write an ES6 function that takes an array of strings and returns the first string that is longer than
 8 characters.
+```js
 // Your code here
 const names = ["Mohan", "Anjali", "Geetanjali", "Ankit", "Bhanu Kumar", "Ramakrishnan",
 console.log(isNamesGreaterThan8(names));
 // Output: "Geetanjali"
-COPY
+```
 9. Write an ES6 function that takes an array of objects representing students with properties name
 and grade. Return the first student object that has a grade of "A".
+```js
 const students = [
 { name: "John", grade: "B" },
 { name: "Mary", grade: "A" },
@@ -84,10 +93,11 @@ const students = [
 const studentWithGradeA = findStudentWithGradeA(students);
 console.log(studentWithGradeA);
 // Output: { name: "Mary", grade: "A" }
-COPY
+```
 10. Write an ES6 function that takes an array of objects representing students with properties name,
 grade and scholarship. Return the first student object that has a grade of "A" or they are a
 scholarship student.
+```js
 const students = [
 { name: "John", grade: "B", scholarship: false },
 { name: "Mary", grade: "B", scholarship: true },
@@ -98,10 +108,11 @@ const students = [
 const student = findStudent(students);
 console.log(student);
 // Output: { name: "Mary", grade: "B", scholarship: true }
-COPY
+```
 11. Write an ES6 function that takes an array of objects representing students with properties name
 and grade. Return the first student object that has a grade of "B" and they are also a scholarship
 student.
+```js
 const students = [
 { name: "John", grade: "B", scholarship: false },
 { name: "Mary", grade: "A", scholarship: true },
@@ -112,10 +123,11 @@ const students = [
 const student = findStudent(students);
 console.log(student);
 // Output: { name: "Sarah", grade: "B", scholarship: true }
-COPY
+```
 12. Write an ES6 function that takes an array of objects containing Bollywood movie information
 (title, director, year, rating) and returns an array with only the movie titles that were made before
 1990 and has a rating above 8.0. (Question Level: tough)
+```js
 const bollywoodMovies = [
 { title: 'Sholay', director: 'Ramesh Sippy', year: 1975, rating: 8.2 },
 { title: 'Amar Akbar Anthony', director: 'Manmohan Desai', year: 1977, rating: 7.6 },
@@ -128,3 +140,4 @@ const bollywoodMovies = [
 // Your code here
 const bestOldMovies = getBestOldBollywoodMovies(bollywoodMovies);
 console.log(bestOldMovies); // Output: ['Sholay', 'Parinda']
+```
