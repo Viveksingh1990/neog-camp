@@ -1,34 +1,37 @@
-Async JS Practice Question Set 1
+# Async JS Practice Question Set 1
 Instructions:
-Specific instructions have been written for each question present in this set.
-Don’t use async-await in this set.
-Please follow ES6 norms for writing your functions.
-You can make use of some methods such as .length, toLowerCase(), toUpperCase() and .join()
-if needed.
+* Specific instructions have been written for each question present in this set.
+* Don’t use async-await in this set.
+* Please follow ES6 norms for writing your functions.
+* You can make use of some methods such as .length, toLowerCase(), toUpperCase() and .join() if needed.
 An example has been provided for fetch call related questions for your understanding.
 1. Write a function ‘delayedGreeting’ that consoles a greeting message after a delay of 2 seconds
 using setTimeout. You can practice this question in any JS editor or your browser console.
+```js
 // Your Code here
 delayedGreeting();
 // Hello, welcome to my portfolio!
-COPY
+```
 2. Write a function ‘delayedAddition’ that takes in two numbers and consoles their sum after a
 delay of 4 seconds using setTimeout. You can practice this question in any JS editor or your
 browser console.
+```js
 // Your code here
 delayedAddition(2, 3);
 // 5
-COPY
+```
 3. Write a function ‘delayAlert’ that takes in a message ‘Hello, world!’ and a delay time in
 milliseconds, and displays the message in an alert box after the specified delay time using
 setTimeout. You can practice this question in any JS editor or your browser console.
+```js
 // Your Code here
 delayedAlert('Hello, world!', 2000);
 // Should display an alert box with the message, Hello, world!
-COPY
+```
 4. Write a function delayedLoop that takes a number 3 and consoles a message 'Hello' three times
 after a delay of 1 second each, using a for-loop and setTimeout. You can practice this question
 in any JS editor or your browser console.
+```js
 // Your Code here
 delayedLoop(3);
 // should print Hello three times after 1 second each
@@ -36,10 +39,11 @@ delayedLoop(3);
 // Hello -- after 1 second
 // Hello -- after another 1 second
 // Hello -- after another 1 second
-COPY
+```
 5. Make a fake fetch call that takes a message and a boolean value to get data and console the
 message received from the server. A fake fetch has been provided. You can practice this
 question in any JS editor or your browser console.
+```js
 const fakeFetch = (msg, shouldSucceed) => {
 return new Promise((resolve, reject) => {
 setTimeout(() => {
@@ -52,12 +56,13 @@ reject(`error from server: ${msg}`);
 };
 // Your Code here
 // Hi -- after 3 seconds
-COPY
+```
 6. EXAMPLE QUESTION: (Solution has been provided for this question for your understanding)
 Use this URL - https://example.com/api/itemlist to make a fake fetch call and handle errors if
 any. Show a proper message to the user on the DOM, as per the status and message received
 from the server. A fakeFetch has been provided. Use HTML, CSS & JS template in REPL or
 Vanilla template in CodeSandbox for this question.
+```js
 const fakeFetch = (url) => {
 return new Promise((resolve, reject) => {
 setTimeout(() => {
@@ -94,7 +99,7 @@ displayOutput.textContent =
 });
 // Output on the DOM should be:
 // The data you are looking for, does not exist.
-COPY
+```
 Explanation:
 In the above code solution, we are making a fakeFetch function call with the
 URL https://example.com/api/itemlist.
@@ -108,6 +113,7 @@ element with ID "output".
 Show a proper message to the user on the DOM, as per the status and message received from
 the server. A fakeFetch has been provided. Use HTML, CSS & JS template in REPL or Vanilla
 template in CodeSandbox for this question.
+```js
 const fakeFetch = (url) => {
 return new Promise((resolve, reject) => {
 setTimeout(() => {
@@ -130,10 +136,11 @@ message: "Success"
 // Your Code here
 // Output on the DOM should be:
 // We are facing high demand at the moment. Please check back later in sometime.
-COPY
+```
 8. Use this URL - https://example.com/api/itemlist to make a fake fetch call and list out all the
 items as an ordered list on the DOM. A fakeFetch has been provided. Use HTML, CSS & JS
 template in REPL or Vanilla template in CodeSandbox for this question.
+```js
 const fakeFetch = (url) => {
 return new Promise((resolve, reject) => {
 setTimeout(() => {
@@ -161,11 +168,12 @@ message: "Items list not found."
 // 1. Bread -- INR 30 -- 10
 // 2. Water Bottle -- INR 50 -- 50
 // 3. Dairy Milk -- INR 20 -- 30
-COPY
+```
 9. Use this URL - https://example.com/api/data to make a fake fetch call and handle errors if any.
 Show a proper message to the user on the DOM, as per the status and message received from
 the server. A fakeFetch has been provided. Use HTML, CSS & JS template in REPL or Vanilla
 template in CodeSandbox for this question.
+```js
 const fakeFetch = (url) => {
 return new Promise((resolve, reject) => {
 setTimeout(() => {
@@ -188,11 +196,12 @@ message: "Success"
 // Your Code here
 // Output on the DOM should be:
 // Internal Server Error! The server crashed. Please try again in some time.
-COPY
+```
 10. Use this URL - https://example.com/api/profile to make a fake fetch call and handle errors if
 any. Show a proper message to the user on the DOM, as per the status and message received
 from the server. A fakeFetch has been provided. Use HTML, CSS & JS template in REPL or
 Vanilla template in CodeSandbox for this question.
+```js
 const fakeFetch = (url) => {
 return new Promise((resolve, reject) => {
 setTimeout(() => {
@@ -215,11 +224,12 @@ message: "Success"
 // Your Code here
 // Output on the DOM should be:
 // Unauthorized Access! Looks like you are not logged in. Please login to see your profil
-COPY
+```
 11. Use this URL - https://example.com/api/profile/NC002 in which we are passing the id of a user
 to make a fake fetch call and display a welcome message to the user on the DOM. A fakeFetch
 has been provided. Use HTML, CSS & JS template in REPL or Vanilla template in
 CodeSandbox for this question.
+```js
 const fakeFetch = (url) => {
 return new Promise((resolve, reject) => {
 setTimeout(() => {
@@ -242,3 +252,4 @@ message: "Resource not found"
 };
 // Your Code here
 // Output on the DOM should be: Welcome!, Roshan from neoG Camp
+```
