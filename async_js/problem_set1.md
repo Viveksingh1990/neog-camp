@@ -101,17 +101,11 @@ displayOutput.textContent =
 // The data you are looking for, does not exist.
 ```
 Explanation:
-In the above code solution, we are making a fakeFetch function call with the
-URL https://example.com/api/itemlist.
-If the Promise is resolved, the **then**method is executed with the successful response as the
-argument, and the console.log statement outputs the response object to the console.
-If the Promise is rejected, the **catch**method is executed with the error object as the
-argument, and the ifstatement checks if the error status is equal to 404. If the error status is
-404, the message "The data you are looking for, does not exist." is displayed in the HTML
+* In the above code solution, we are making a fakeFetch function call with the URL https://example.com/api/itemlist.
+* If the Promise is resolved, the **then**method is executed with the successful response as the argument, and the console.log statement outputs the response object to the console.
+* If the Promise is rejected, the **catch**method is executed with the error object as the argument, and the ifstatement checks if the error status is equal to 404. If the error status is 404, the message "The data you are looking for, does not exist." is displayed in the HTML
 element with ID "output".
-7. Use this URL - https://example.com/api/chat to make a fake fetch call and handle errors if any.
-Show a proper message to the user on the DOM, as per the status and message received from
-the server. A fakeFetch has been provided. Use HTML, CSS & JS template in REPL or Vanilla
+7. Use this URL - https://example.com/api/chat to make a fake fetch call and handle errors if any. Show a proper message to the user on the DOM, as per the status and message received from the server. A fakeFetch has been provided. Use HTML, CSS & JS template in REPL or Vanilla
 template in CodeSandbox for this question.
 ```js
 const fakeFetch = (url) => {
