@@ -1,3 +1,4 @@
+# TODO: What is schema? What is mongoose? Why Database? Why Backend?
 # 1. Learning data modeling
 
 Create mongoose models for the given images.
